@@ -8,6 +8,6 @@
         /// </summary>
         public int Id { get; set; }
         public string Denumire{ get; set; }
-        public float ?PretUnitar { get; set; }
+        public float? PretUnitar { get; set; }
     }
 }

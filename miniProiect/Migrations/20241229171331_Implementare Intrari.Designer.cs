@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using miniProiect.Data;
 
@@ -11,9 +12,11 @@ using miniProiect.Data;
 namespace miniProiect.Migrations
 {
     [DbContext(typeof(MiniProjectContext))]
-    partial class MiniProjectContextModelSnapshot : ModelSnapshot
+    [Migration("20241229171331_Implementare Intrari")]
+    partial class ImplementareIntrari
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
